@@ -2,7 +2,7 @@
 
 `A Simple Gallery` is a static site generator for making simple gallery-focused sites. 
 
-# How to Use
+# Getting Started
 
 ## Requirements: 
 Running `A Simple Gallery` requires you to have `python3` installed and access to a server to host your site somewhere. If you want to try it out really quickly, you can host your site using [GitHub pages](https://pages.github.com).

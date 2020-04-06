@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Roman K.">
-    <title>Gallery Gen</title>
+    <title>A Simple Gallery</title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -18,57 +18,69 @@
   <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#563d7c">
 
-  <!-- Fonts -->
+<!-- --------------------- -->
+<!--         Fonts         -->
+<!-- --------------------- -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <!-- link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap" rel="stylesheet"-->
+  <!--link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"-->
 
- <!-- Styles-->
+<!-- --------------------- -->
+<!--        Styles         -->
+<!-- --------------------- -->
   <style>
-      #sidebar {
-        width:250px;
-        height:100%;
-        position:relative;
-        float:left;
-        padding:50px;
-        font-family: 'EB Garamond', serif;
-      }
-      #main-gallery {
-        width:60%;
-        height:auto;
-        position: relative;
-        float:left;
-        padding:25px;
-      }
-      .img-large {
-        width:90%;
-        margin:25px auto;
-        position:relative;
-        float: left;
-      }
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
       body {background-color:rgb(244, 244, 244);}
-      .jumbotron {background-color:rgb(244, 244, 244) !important;}
-      h1 {
-        font-family: 'EB Garamond', serif;
-        font-size:30px;
+      
+      /* ------------------- */
+      /*       Desktop       */
+      /* ------------------- */
+      @media (min-width: 1016px) {
+        #sidebar {
+          width:250px;
+          height:100%;
+          position:relative;
+          float:left;
+          padding:50px;
+          font-family: 'EB Garamond', serif;
+        }
+        #main-gallery {
+          width:60%;
+          height:auto;
+          position: relative;
+          float:left;
+          padding:25px;
+        }
+        .img-large {
+          width:90%;
+          margin:25px auto;
+          position:relative;
+          float: left;
+        }
       }
-      .xsunt-span {
-        font-family: 'Roboto Mono', monospace;
-        font-size:25px;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+      /* ------------------- */
+      /*        Mobile       */
+      /* ------------------- */
+      @media (max-width: 1015px) {
+        #sidebar {
+          width:250px;
+          height:100%;
+          position:relative;
+          float:left;
+          padding:50px;
+          font-family: 'EB Garamond', serif;
+        }
+        #main-gallery {
+          width:100%;
+          height:auto;
+          position: relative;
+          float:left;
+          padding:25px;
+        }
+        .img-large {
+          width:calc(100% - 50px);
+          margin:25px 0px;
+          position:relative;
+          float: left;
         }
       }
     </style>
@@ -80,9 +92,10 @@
   <!-- -------------------------- -->
   <div id="sidebar">
   A Simple Gallery<br>
-  by Roman K.
+  by Roman K.<br><br>
+  A Static Site Generator<br>
+  <a href="https://github.com/sharedphysics/ASimpleGallery/">Source Code</a>
   </div>
-
 
 
   <!-- -------------------------- -->
