@@ -92,35 +92,3 @@
     </style>
 
 </head>
-<body>
-  <!-- -------------------------- -->
-  <!--          Sidebar           -->
-  <!-- -------------------------- -->
-  <div id="sidebar">
-  A Simple Gallery Demo<br>
-  by Roman K.<br><br>
-  A Static Site Generator<br>
-  <a href="https://github.com/sharedphysics/ASimpleGallery/">Source Code</a>
-  <br><br><hr><br>
-<a href="./images/Calvin%20and%20Hobbes/index.html">Calvin and Hobbes</a><br>
-<a href="./images/Subdirectory%201/index.html">Subdirectory 1</a><br>
-<a href="./images/Test%20Subdirectory%202/index.html">Test Subdirectory 2</a><br>
-
-  </div>
-
-
-  <!-- -------------------------- -->
-  <!--            Body            -->
-  <!-- -------------------------- -->
-
-  <div id="main-gallery">
-<img class="img-large" src="images/austin-wade-beHyzISRtEY-unsplash.jpg">
-<img class="img-large" src="images/harley-davidson-npZR4G67ev8-unsplash.jpg">
-<img class="img-large" src="images/jorge-gardner-IHYtzp6Fe3M-unsplash.jpg">
-<img class="img-large" src="images/kate-smr-Ye3VhmjdbXg-unsplash.jpg">
-<img class="img-large" src="images/kate-smr-rSzOCn4CEfw-unsplash.jpg">
-<img class="img-large" src="images/tim-trad-67IDWWYCltI-unsplash.jpg">
-
-</div>
-</body>
-</html>
