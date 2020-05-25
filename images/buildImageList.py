@@ -8,7 +8,7 @@ import codecs
 dirs = sorted(os.listdir())
 
 def main():
-	writeFile= open("../snippets/3-body-images.html","w+")
+	writeFile= open("../snippets/5-body-images.html","w+")
 	startImg = """<img class=\"img-large\" src=\"images/"""
 	endImg = """\">"""
 

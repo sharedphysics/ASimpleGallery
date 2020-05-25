@@ -7,6 +7,8 @@ printf "\033[0;32m  Starting Build Process \033[0m\n"
 printf "\033[0;32m  ... Building Your Gallery... \033[0m\n" 
 cd images
 python3 buildImageList.py
+python3 optimizations.py
+python3 buildImageList-withsubdirectory.py
 
 # Combine various html snippets into one core index.html file
 printf "\033[0;32m  ... Compiling HTML files... \033[0m\n" 
