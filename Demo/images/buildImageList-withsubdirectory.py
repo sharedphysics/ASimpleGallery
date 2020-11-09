@@ -40,6 +40,7 @@ for folders in dirs:
     # This will create the images list for subdirectories
     images = sorted(os.listdir(folders))
     createSubDirImagesList = open("./"+folders+"/5-body-images.txt","w+")
+    createSubDirImagesList.write("<br>")
     for imagefiles in images:
         if imagefiles.endswith(".jpg"): # Reading only .jpg files
             print (imagefiles) # Test output

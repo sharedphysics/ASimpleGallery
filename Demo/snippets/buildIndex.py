@@ -8,18 +8,18 @@ import codecs
 dirs = sorted(os.listdir())
 
 def main():
-	writeFile= open("../index.html","w+")
-	for file in dirs:
-		if file.endswith(".html"): # Reading only .txt files
-			# This is a loop for each file.
-			# It reads each file and reads the content to the writeFile, then adds a line break ("\n")
-			readFile=codecs.open(file, 'rb', encoding='utf-8')
-			writeFile.write(readFile.read()) 
-			writeFile.write("\n") 
-	writeFile.close()
+    writeFile= open("../index.html","w+")
+    for file in dirs:
+        if file.endswith(".html"): # Reading only .html files
+            # This is a loop for each file.
+            # It reads each file and reads the content to the writeFile, then adds a line break ("\n")
+            readFile=codecs.open(file, 'rb', encoding='utf-8')
+            writeFile.write(readFile.read()) 
+            writeFile.write("\n") 
+    writeFile.close()
 
 if __name__== "__main__":
-	main()
+    main()
 
 # References
 # https://www.geeksforgeeks.org/python-program-to-merge-two-files-into-a-third-file/

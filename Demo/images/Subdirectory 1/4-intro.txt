@@ -1,0 +1,4 @@
+<!-- This allows html and inline css formatting -->
+<h1>Heading 1</h1>
+<p>Include paragraphs, and any sort of text here.</p>
+<p>Tell your story, or let the images speak for themselves.</p>

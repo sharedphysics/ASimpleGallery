@@ -1,0 +1,10 @@
+<body>
+  <!-- -------------------------- -->
+  <!--          Sidebar           -->
+  <!-- -------------------------- -->
+  <div id="sidebar">
+  A Simple Gallery Demo<br>
+  by Roman K.<br><br>
+  A Static Site Generator<br>
+  <a href="https://github.com/sharedphysics/ASimpleGallery/">Source Code</a>
+  <br><br><hr><br>

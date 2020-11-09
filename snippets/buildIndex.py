@@ -10,7 +10,7 @@ dirs = sorted(os.listdir())
 def main():
 	writeFile= open("../index.html","w+")
 	for file in dirs:
-		if file.endswith(".html"): # Reading only .txt files
+		if file.endswith(".html"): # Reading only .html files
 			# This is a loop for each file.
 			# It reads each file and reads the content to the writeFile, then adds a line break ("\n")
 			readFile=codecs.open(file, 'rb', encoding='utf-8')

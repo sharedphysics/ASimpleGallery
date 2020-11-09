@@ -10,7 +10,7 @@ Running `A Simple Gallery` requires you to have `python3` installed and access t
 You also need to have `ImageMagick` installed for image processing. You can set it up via `brew install ImageMagick`
 
 ## Site Management
-Your site is really easy to manage! Just add images into the `/images/` folder and subfolders, and **make sure you don't accidently delete the .py files in /images/.**
+Your site is really easy to manage! Just add images into the `/images/` folder and subfolders, and **make sure you don't accidentally delete the .py files in /images/.**
 
 
 ## Building the Site
