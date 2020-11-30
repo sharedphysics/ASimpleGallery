@@ -42,11 +42,11 @@ for folders in dirs:
     createSubDirImagesList = open("./"+folders+"/5-body-images.txt","w+")
     createSubDirImagesList.write("<br>")
     for imagefiles in images:
-        img_list = [".jpg",".JPG",".JPEG",".jpeg"]
-        if imagefiles.endswith(tuple(img_list)): # Reading only .jpg files
+        img_list = [".jpg",".JPG",".JPEG",".jpeg"] # list of image files
+        if imagefiles.endswith(tuple(img_list)): # Reading only image files
             print (imagefiles) # Test output
             urlEncodeImages = urllib.parse.quote(imagefiles) # Encode folder paths to work as URLs
-            createSubDirImagesList.write("""<img class=\"img-large\" src=\"./optimised/""" + urlEncodeImages + """\">""" + "\r\n")
+            createSubDirImagesList.write("""<a href=\".""" + urlEncodeImages + """\">""" + """<img class=\"img-large\" src=\"./optimised/""" + urlEncodeImages + """\"></a>""" + "\r\n")
     createSubDirImagesList.close()
 
 
