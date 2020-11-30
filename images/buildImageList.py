@@ -8,23 +8,23 @@ import codecs
 dirs = sorted(os.listdir())
 
 def main():
-	writeFile= open("../snippets/5-body-images.html","w+")
-	startImg = """<img class=\"img-large\" src=\"images/"""
-	endImg = """\">"""
+    writeFile= open("../snippets/5-body-images.html","w+")
+    startImg = """<img class=\"img-large\" src=\"images/"""
+    endImg = """\">"""
 
-	for file in dirs:
-		img_list = [".jpg",".JPG",".JPEG",".jpeg",".png",".PNG"] # list of image files
+    for file in dirs:
+        img_list = [".jpg",".JPG",".JPEG",".jpeg",".png",".PNG"] # list of image files
         if imagefiles.endswith(tuple(img_list)): # Reading only image files
-			# This is a loop for each file.
-			# It reads each file and reads the content to the writeFile, then adds a line break ("\n")
-			writeFile.write(startImg)
-			writeFile.write(file)
-			writeFile.write(endImg)
-			writeFile.write("\r\n")
-	writeFile.close()
+            # This is a loop for each file.
+            # It reads each file and reads the content to the writeFile, then adds a line break ("\n")
+            writeFile.write(startImg)
+            writeFile.write(file)
+            writeFile.write(endImg)
+            writeFile.write("\r\n")
+    writeFile.close()
 
 if __name__== "__main__":
-	main()
+    main()
 
 # References
 # https://www.geeksforgeeks.org/python-program-to-merge-two-files-into-a-third-file/

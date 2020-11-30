@@ -32,8 +32,8 @@ for folders in dirs:
     # Call ImageMagick
     #     This first syncs the images to a new folder for optimization
     #     Then we run the ImageMagick mogrify command to process the images down to a specifc size and optimizes weight.
-    os.system ('rsync -avr --exclude=\'*/\' --exclude=\'*.html\' --exclude=\'*.txt\' --include=\'*.{jpg,JPG,jpeg,JPEG}\' ' + folders_string + '/* ' + folders_string + '/optimised/') 
-    os.system ('magick mogrify -density 72 -thumbnail 1100x1100 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB ' + folders_string + '/optimised/*.{jpg,JPG,jpeg,JPEG}')
+    os.system ('rsync -avr --exclude=\'*/\' --exclude=\'*.html\' --exclude=\'*.txt\' --include=\'*.{jpg,JPG,jpeg,JPEG,png,PNG}\' ' + folders_string + '/* ' + folders_string + '/optimised/') 
+    os.system ('magick mogrify -density 72 -thumbnail 1100x1100 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB ' + folders_string + '/optimised/*.{jpg,JPG,jpeg,JPEG,PNG,png}')
 
 
 
