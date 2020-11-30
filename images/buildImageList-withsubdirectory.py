@@ -46,7 +46,7 @@ for folders in dirs:
         if imagefiles.endswith(tuple(img_list)): # Reading only image files
             print (imagefiles) # Test output
             urlEncodeImages = urllib.parse.quote(imagefiles) # Encode folder paths to work as URLs
-            createSubDirImagesList.write("""<a href=\".""" + urlEncodeImages + """\">""" + """<img class=\"img-large\" src=\"./optimised/""" + urlEncodeImages + """\"></a>""" + "\r\n")
+            createSubDirImagesList.write("""<a href=\"""" + urlEncodeImages + """\">""" + """<img class=\"img-large\" src=\"./optimised/""" + urlEncodeImages + """\"></a>""" + "\r\n")
     createSubDirImagesList.close()
 
 
