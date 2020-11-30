@@ -13,7 +13,7 @@ def main():
 	endImg = """\">"""
 
 	for file in dirs:
-		img_list = [".jpg",".JPG",".JPEG",".jpeg"] # list of image files
+		img_list = [".jpg",".JPG",".JPEG",".jpeg",".png",".PNG"] # list of image files
         if imagefiles.endswith(tuple(img_list)): # Reading only image files
 			# This is a loop for each file.
 			# It reads each file and reads the content to the writeFile, then adds a line break ("\n")

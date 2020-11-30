@@ -16,7 +16,7 @@ dirs = sorted(next(os.walk('.'))[1]) # This will get all of the subdirectories i
 
 # print (dirs) # Test to see What
 
-# Define and create the hompage-based sidebar URLs based on subdirectories found:
+# Define and create the hompage-based sidebar URLs based on subdirectories folder:
 createSidebar = open("../snippets/3-sidebar-content.html","w+")
 for folders in dirs:
     print (folders) # Test output
@@ -42,7 +42,7 @@ for folders in dirs:
     createSubDirImagesList = open("./"+folders+"/5-body-images.txt","w+")
     createSubDirImagesList.write("<br>")
     for imagefiles in images:
-        img_list = [".jpg",".JPG",".JPEG",".jpeg"] # list of image files
+        img_list = [".jpg",".JPG",".JPEG",".jpeg",".png",".PNG"] # list of image files
         if imagefiles.endswith(tuple(img_list)): # Reading only image files
             print (imagefiles) # Test output
             urlEncodeImages = urllib.parse.quote(imagefiles) # Encode folder paths to work as URLs
